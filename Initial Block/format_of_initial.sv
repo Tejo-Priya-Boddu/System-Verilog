@@ -11,4 +11,13 @@ module tb;
     #10;
     a=1'b0;
   end 
+  
+  initial begin
+    $monitor("a is: %0d",a);
+  end
+  initial begin
+    $dumpfile("dump.vcd");
+    $dumpvars;
+  end
+  
 endmodule
